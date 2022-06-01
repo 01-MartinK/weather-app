@@ -9,10 +9,8 @@ import WeatherDisplay from './components/WeatherDisplay';
 function App() {
   const [city, setCity] = useState("Tartu");
   const [weatherData, setWeatherData] = useState([]);
-  const [b,setB] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [cityData, setCityData] = useState();
   const key = '77f97b598769bf8861004c74e30ebbba';
 
   const fetchNewWeatherDataHandler = useCallback(async () => {
